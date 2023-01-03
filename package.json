@@ -1,0 +1,35 @@
+{
+  "name": "nodejs-home-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d dist",
+    "task1.1": "nodemon src/module2/task1.js",
+    "task1.2": "nodemon src/module2/task2.js",
+    "task1.3": "npm run build & node dist/module2/task3/task2.js & node dist/module2/task3/task1.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RookieLittleFatty/nodejs-home-task.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "alice tao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RookieLittleFatty/nodejs-home-task/issues"
+  },
+  "homepage": "https://github.com/RookieLittleFatty/nodejs-home-task#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.20.5",
+    "@babel/preset-env": "^7.20.2",
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "csvtojson": "^2.0.10"
+  }
+}
